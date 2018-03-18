@@ -135,6 +135,9 @@ Note: To check that array is object use:
         // Run the same code over and over.
     }
 ```
+
+---
+
 - while
 ```javascript
 var i = 0;
@@ -143,9 +146,6 @@ var i = 0;
         i++;
     }
 ```
-
----
-
 - do ... while
 ```javascript
 var i = 0;
@@ -154,6 +154,9 @@ var i = 0;
         i++;
     } while (i < array.length)
 ```
+
+---
+
 - for ... in
 ```javascript
     var my_address = {
