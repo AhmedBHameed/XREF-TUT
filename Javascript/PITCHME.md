@@ -7,7 +7,7 @@ Crash course by XREF
 ## What is JavaScript
 
 - JavaScript is the scripting language of the web.
-- Run on client slide (No any more because of Nodejs).
+- Run on client slide (Not any more with Nodejs).
 - Created by Brendan Eich and Netscape.
 - Doesn't need special software or server.
 - Is the main code of many libraries or "Building Block" (Jquery, Ajax, Angular, ...)
@@ -23,16 +23,6 @@ Crash course by XREF
 - Power HTML5 features (Canvas, Geolocation, Local Storage, etc).
 - Search & Autocomplete.
 - Much Much more.
-
----
-
-## ATTENTION!!!
-### Angular is not:
-- Server side framework or technology.
-- JAVASCRIPT library (JQuery).
-- Design pattern
-- Platform or language (.NET, Java).
-- Plugin or extention.
 
 ---
 
@@ -84,8 +74,11 @@ Crash course by XREF
 @[3-4]
 @[5]
 @[6-12]
+@fa[arrow-down]
 
-#### VALUES TYPE:
++++
+
+## Variables TYPE:
 - Strings.
 - Numbers.
 - Booleans.
@@ -95,8 +88,7 @@ Crash course by XREF
 ---
 
 ## Arrays are Objects
-
-
+@fa[arrow-down]
 +++
 #### Indexed array
 ```Javascript
