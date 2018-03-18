@@ -120,3 +120,53 @@ Note: To check that array is object use:
 ```javascript
     console.log("Is arrays are objects: " + (array instanceof Object) );
 ```
+
+---
+
+### Loops
+
+***Loops are used to run the same code over and over until a certin condition is met***
+
+#### Type of loops:
+
+- for
+```javascript
+    for (var i = 0; i < array.length; i++) {
+        // Run the same code over and over.
+    }
+```
+
+---
+
+- while
+```javascript
+var i = 0;
+    while(i < array.length) {
+        // Run the same code over and over.
+        i++;
+    }
+```
+- do ... while
+```javascript
+var i = 0;
+    do {
+        // Run the same code over and over.
+        i++;
+    } while (i < array.length)
+```
+
+---
+
+- for ... in
+```javascript
+    var my_address = {
+        country: 'Austria',
+        city: 'Vienna',
+        street: 'I will not tell you.',
+        house: 'What do you want exactly?',
+        door_num: 'Back off'
+    }
+    for (var item in my_address) {
+        console.log(item + ': ' +my_address[item]);
+    }
+```
