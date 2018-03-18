@@ -1,4 +1,4 @@
-# Angular crash course tutorial
+# JavaScript crash course tutorial
 
 This is a simple crash course slider directed to Refugees { Code }.
 
@@ -7,7 +7,7 @@ This is a simple crash course slider directed to Refugees { Code }.
 Just go tho the following link below:
 
 ```
-https://gitpitch.com/AhmedBHameed/XREF-TUT/master?p=Angular
+https://gitpitch.com/AhmedBHameed/XREF-TUT/master?p=Javascript
 ```
 
 By XREF.

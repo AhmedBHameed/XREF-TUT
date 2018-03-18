@@ -7,7 +7,11 @@ Crash course tutorials with different tachnologies.
 Just go to the the following tutorial link below:
 
 ### Tutorials
-1. **Angular**
+1. **JavaScript**
+```
+https://gitpitch.com/AhmedBHameed/XREF-TUT/master?p=Javascript
+```
+2. **Angular**
 ```
 https://gitpitch.com/AhmedBHameed/XREF-TUT/master?p=Angular
 ```
