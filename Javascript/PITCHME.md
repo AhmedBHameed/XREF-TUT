@@ -74,6 +74,7 @@ Crash course by XREF
 @[3-4]
 @[5]
 @[6-12]
+
 @fa[arrow-down]
 
 +++
@@ -88,7 +89,9 @@ Crash course by XREF
 ---
 
 ## Arrays are Objects
+
 @fa[arrow-down]
+
 +++
 #### Indexed array
 ```Javascript
