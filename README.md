@@ -1,13 +1,13 @@
-# Ang-Tut
+# XREF-Tutorials
 
-This is a simple crash course slider directed to Refugees { Code }.
+Crash course tutorials with different tachnologies.
 
-## How to run slider
+## How to run sliders
 
-Just go tho the following link below:
+Just go to the the following tutorial link below:
 
 ```
-https://gitpitch.com/AhmedBHameed/Ang-Tut
+https://gitpitch.com/AhmedBHameed/[Tutorial folder name]/
 ```
 
 By XREF.
