@@ -143,6 +143,9 @@ var i = 0;
         i++;
     }
 ```
+
+---
+
 - do ... while
 ```javascript
 var i = 0;
