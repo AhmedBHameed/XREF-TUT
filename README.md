@@ -6,8 +6,10 @@ Crash course tutorials with different tachnologies.
 
 Just go to the the following tutorial link below:
 
+### Tutorials
+1. **Angular**
 ```
-https://gitpitch.com/AhmedBHameed/[Tutorial folder name]/
+https://gitpitch.com/AhmedBHameed/XREF-TUT/master?p=Angular
 ```
 
 By XREF.
