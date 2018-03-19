@@ -113,7 +113,7 @@ export class MycomponentComponent {
 ```javascript
 import { Injectable } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { HttpClient, HttpHeaders, HttpParams,  HttpRequest, HttpErrorResponse } from  '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams, HttpRequest, HttpErrorResponse } from  '@angular/common/http';
 import { environment } from  '../../../environments/environment';
 
 @Injectable()
@@ -164,11 +164,11 @@ export class MyserviceService {
 
 ### Angular microscope view
 
-![More angular](./assets/md/dist/more_angular.jpg)
+![More angular](/Angular/assets/img/more_angular.jpg)
 
 +++
 
-![Angular structure](./assets/md/dist/angular_structure.jpg)
+![Angular structure](/Angular/assets/img/angular_structure.jpg)
 
 ---
 

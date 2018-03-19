@@ -170,3 +170,47 @@ var i = 0;
         console.log(item + ': ' +my_address[item]);
     }
 ```
+---
+
+### Functions
+
+***A function is a block of code that runs when it is called***
+
+#### Types of functions
+- Decleration function
+- Anonymous function
+
+```javascript
+function sayHi() {
+    console.log('Hi');
+}
+sayHi();
+```
+
+```javascript
+var sayHi = function() {
+    console.log('Hi');
+}
+sayHi();
+```
+
+---
+
+**Everything in Javascript is an object**
+**we have some buildin objects like: String, Date, Array**
+
+Objects have properties
+objectName.propertyName
+
+```javascript
+var greeting = 'Hello';
+greeting.toUpperCase();
+var x = greeting.length;
+```
+@[1]
+@[2]
+@[3]
+
+x will be 5.
+---
+
