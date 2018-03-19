@@ -164,11 +164,11 @@ export class MyserviceService {
 
 ### Angular microscope view
 
-![More angular](/assets/img/more_angular.jpg)
+![More angular](./assets/md/dist/more_angular.jpg)
 
 +++
 
-![Angular structure](assets/img/angular_structure.jpg)
+![Angular structure](./assets/md/dist/angular_structure.jpg)
 
 ---
 

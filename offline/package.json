@@ -7,7 +7,7 @@
     "node": "6.10.2"
   },
   "scripts": {
-    "server": "nodemon index.js"
+    "offline": "nodemon index.js"
   },
   "dependencies": {
     "ejs": "2.5.6",

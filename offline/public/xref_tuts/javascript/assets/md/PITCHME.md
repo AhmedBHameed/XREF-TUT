@@ -48,8 +48,8 @@ Crash course by XREF
 </body>
 </html>
 ```
-<span class="code-presenting-annotation fragment current-only" data-code-focus="9"></span>
-<span class="code-presenting-annotation fragment current-only" data-code-focus="10-13"></span>
+@[9]
+@[10-13]
 
 ---
 ## Variables
@@ -70,12 +70,12 @@ Crash course by XREF
         door_num: 'Back off'
     }
 ```
-<span class="code-presenting-annotation fragment current-only" data-code-focus="1-2"></span>
-<span class="code-presenting-annotation fragment current-only" data-code-focus="3-4"></span>
-<span class="code-presenting-annotation fragment current-only" data-code-focus="5"></span>
-<span class="code-presenting-annotation fragment current-only" data-code-focus="6-12"></span>
+@[1-2]
+@[3-4]
+@[5]
+@[6-12]
 
-<i class="fa fa-arrow-down" aria-hidden="true"> </i>
+@fa[arrow-down]
 
 +++
 
@@ -90,7 +90,7 @@ Crash course by XREF
 
 ## Arrays are Objects
 
-<i class="fa fa-arrow-down" aria-hidden="true"> </i>
+@fa[arrow-down]
 
 +++
 #### Indexed array
@@ -104,9 +104,9 @@ Crash course by XREF
 
     var array = ['index 0', 'index 1', 'index 2'];
 ```
-<span class="code-presenting-annotation fragment current-only" data-code-focus="1-4"></span>
-<span class="code-presenting-annotation fragment current-only" data-code-focus="6"></span>
-<span class="code-presenting-annotation fragment current-only" data-code-focus="8"></span>
+@[1-4]
+@[6]
+@[8]
 +++
 #### Associative array
 ```Javascript
