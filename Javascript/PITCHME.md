@@ -177,8 +177,8 @@ var i = 0;
 ***A function is a block of code that runs when it is called***
 
 #### Types of functions
-- Decleration function
-- Anonymous function
+- Declaration function
+- Expression function
 
 ```javascript
 function sayHi() {
