@@ -11,13 +11,17 @@ Just go to the the following tutorial link below:
 ```
 https://gitpitch.com/AhmedBHameed/XREF-TUT/master?p=Javascript
 ```
-2. **Angular**
+2. **JSON**
+```
+https://gitpitch.com/AhmedBHameed/XREF-TUT/master?p=JSON
+```
+3. **Angular**
 ```
 https://gitpitch.com/AhmedBHameed/XREF-TUT/master?p=Angular
 ```
-3. **JSON**
+4. **TypeScript**
 ```
-https://gitpitch.com/AhmedBHameed/XREF-TUT/master?p=JSON
+https://gitpitch.com/AhmedBHameed/XREF-TUT/master?p=Typescript
 ```
 
 By XREF.

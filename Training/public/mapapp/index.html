@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Find Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/bootstrap/css/bootstrap.min.css" />
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOnZENkkRXBB7mOsioQWiojhiYSuJ7cJg&libraries=geometry"></script>
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap-notify.min.js"></script>
+    <script src="./assets/ts/script.js"></script>
+</head>
+<body>
+    <div class="myform p-3">
+        <div class="marker-info">
+            <div class="row">
+                <div class="col-2">
+                    <h5>Name: <span class="name"></span></h5>
+                </div>
+                <div class="col-4">
+                    <h5>Latitude: <span class="lat"></span></h5>
+                </div>
+                <div class="col-4">
+                    <h5>Longitude: <span class="lng"></span></h5>
+                </div>
+            </div>
+        </div>
+        <form class="form-inline" onsubmit="return findme.figureDirection();">
+            <div class="form-group">
+                <label for="person-one" class="mr-3">From:</label>
+                <select class="form-control persones-name" onchange="findme.setSource(event)">
+                    <option>Select person</option>
+                </select>
+            </div>
+            <div class="form-group mx-sm-3">
+                <label for="person-two" class="mr-3">To:</label>
+                <select class="form-control persones-name" onchange="findme.setDistination(event);">
+                    <option>Select person</option>
+                </select>
+            </div>
+            <div class="form-group mx-sm-3">
+                <label for="person-two" class="mr-3">With: </label>
+                <select class="form-control" onchange="findme.setTransportBy(event)">
+                    <option value="DRIVING" selected>DRIVING</option>
+                    <option value="WALKING">Walking</option>
+                    <option value="BICYCLING">Bicycling</option>
+                    <option value="TRANSIT">Transit</option>
+                </select>
+            </div>
+            <div class="form-group ml-3 mt-4">
+                <button type="submit" class="btn btn-primary">Get direction</button>
+                <button type="button" onclick="findme.deactivateDirection()" class="deactivateDirection btn btn-warning ml-3">Deactivate direction</button>
+                <button type="button" onclick="findme.deleteMarker()" class="deleteMarker btn btn-danger ml-3">Delete marker</button>
+            </div>
+        </form>
+    </div>
+    <section class="row h-100">
+        <div class="col-12 h-100">
+            <div id="Google-Map" class="h-100"></div>
+        </div>
+    </section>
+    
+    <div id="map-modal" class="modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Map Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <label>Type person name: </label>
+                    <input type="text" class="marker-name w-100">
+                    <small class="err-validation">Name must be more than 2 characters.</small>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" onclick="findme.uploadMarkerInfo()">Save</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

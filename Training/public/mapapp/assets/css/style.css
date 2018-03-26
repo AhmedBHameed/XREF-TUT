@@ -1,0 +1,45 @@
+body, html {
+    height: 100%;
+    background: darkgray;
+}
+.myform {
+    background: lightgray;
+    border-radius: 10px;
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 75%;
+}
+.myform input {
+    background: white;
+    border: 2px solid gray;
+    outline: 0;
+    width: 250px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.myform button.deactivateDirection {
+    display: none;
+}
+.tt-menu {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 1px;
+    max-height: 150px;
+    overflow-y: auto;
+    width: 300px;
+}
+
+  
+  /* Modal styling */
+  #map-modal input {
+    border-radius: 8px;
+    padding: 5px;
+  }
+  #map-modal .err-validation {
+      color: red;
+      display: none;
+  }

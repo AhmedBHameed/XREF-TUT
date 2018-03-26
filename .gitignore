@@ -1,2 +1,8 @@
 desktop.ini
-offline/node_modules/*
+**/node_modules/*
+**/package-lock.json
+
+Training/*.js
+Training/*.js.map
+Training/public/**/*.js
+Training/public/**/*.js.map
