@@ -321,18 +321,18 @@ setInterval( () => {
 
 ---
 
-3. Intelisense
+3. Intellisense
 
 ***This is the most beutiful feature that typescript give us. When you define a class and then you want to call a method or property in another place for the same class, then TypeScript will sense all the property and methods inside that called class and give them all to you as options. OR what we somehow call it autocomplete.***
 
 ---
 
-4. Extra features.
+4. Extra features like:
 
-- classes
-- Transpile to ES5, or ES6.
-- Modulization.
-- etc.
+    - classes
+    - Transpile to ES5, or ES6.
+    - Modulization.
+    - etc.
 
 ---
 
