@@ -13,7 +13,7 @@ app.get('/typescript', (req: any, res: any) => {
 });
 app.get('/mapapp', (req: any, res: any) => {
 	res.set('Content-Type', "text/html")
-		.sendFile(path.join(__dirname, '/public/mapapp/index.html'))
+		.sendFile(path.join(__dirname, '/public/mapapp/src/index.html'))
 });
 
 app.listen(app.get('port'), () => {

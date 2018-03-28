@@ -81,9 +81,39 @@ https://www.typescriptlang.org/docs/handbook/basic-types.html
 ---
 
 ## Installation
+1.  ```
+    npm install -g typescript@latest
+    ```
+To install TypeScript globally
 
+2. Take a copy of the repository.
 ```
-npm install -g typescript@latest
+git clone https://github.com/AhmedBHameed/XREF-TUT.git
+```
+
++++
+
+3. Open a terminal or CLI or commapnd prompt in Windows and navigate to XREF-TUT/Training
+
+4. Make youre that you have tsconfig.json if it is not exsisted then create new one:
+```
+tsc -init
+```
++++
+
+5. make sure to uncomment those lines:
+    ```json
+    "sourceMap": true, 
+    "noImplicitAny": false
+    ```
+6. Now run you transpiler
+```
+tsc -w
+```
+
+7. Finally run your nodejs server
+```
+npm run server
 ```
 
 ---
@@ -149,6 +179,8 @@ function getSum(num1: number, num2: number): number {
 console.log(getSum(10,5));
 ```
 
++++
+
 ## Slight change
 ```typescript
 function getSum(num1: string, num2: string): number {
@@ -197,7 +229,6 @@ class User {
     name: string;
     email: string;
     age: number;
-
     constructor(name: string, email: string, age: number) {
         this.name = this.name.charAt(0).toUpperCase() + this.name.substr(1);
         this.email = email;
@@ -212,12 +243,10 @@ class User {
         }
     }
 }
-
 let ahmed = new User('ahmed', 'ahmedbazy@gmail.com', 28);
 console.log(ahmed.name + ' age is: ' + ahmed.age);
 ```
 Change age to private and see what happen.
-
 ```typescript
 ahmed.isUserRegister('Ahmed');
 ```
