@@ -1,5 +1,5 @@
 desktop.ini
-**/node_modules/*
+**/node_modules
 **/package-lock.json
 
 Training/*.js
