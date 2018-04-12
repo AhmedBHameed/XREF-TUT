@@ -57,8 +57,52 @@ Crash course by XREF
 ---
 
 # Time for BIG talk.
+## Angular part-2
 ### Are you ready?
 
+---
+
+## Files structure
+
+```text
+angular-Project
+├── e2e
+├── node_modules
+├── src
+│   ├── app
+│   │   ├── componenets
+│   │   ├── routes
+│   │   ├── services
+│   │   └── pipes
+│   ├── assets
+│   ├── environmenets
+│   ├── favicon.ico
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── style.css
+│   ├── test.ts
+│   ├── tsconfig.app.json
+│   ├── tsconfig.spec.json
+│   └── typings.d.ts
+├── .angular-cli.json
+├── .editorconfig
+├── .gitignore
+├── karma.conf.js
+├── package-lock.json
+├── package.json
+├── protractor.json
+├── README.md
+├── tsconfig.json
+└── tslinter.json
+```
+
+@[5-20]
+@[6-9]
+
+---
+- test 1 |
+- test 2 |
 ---
 
 ## Components
@@ -88,7 +132,7 @@ export class MycomponentComponent {
     constructor() { }
 
     sayMyName() {
-        console.log('Ang-Tut provided by XREF');
+        console.log('Ang-Tut provided by ' + this.providedBy);
     }
 }
 ```
