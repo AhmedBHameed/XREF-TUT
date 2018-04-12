@@ -128,9 +128,7 @@ angular-Project
 ---
 
 ## Components
-
 ***Components are the main way to build and specify elements and logic on pages***
-
 - Basic building block of Angular UI |
 - Angular is a tree of components. |
 - Decorator allow us to mark a class as an Angular component & provide a metadata that determines how the component should be proccessed, initiated, and used at runtime. |
