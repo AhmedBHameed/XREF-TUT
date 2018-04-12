@@ -49,10 +49,24 @@ Crash course by XREF
 
 ## What is TypeScript?
 
-- A strict supset of JavaScript with added feature.
-- Created by Microsoft.
-- Optinal static typing (C#, Java).
-- Class-based OOP
+- A strict supset of JavaScript with added feature. |
+- Created by Microsoft. |
+- Optinal static typing (C#, Java). |
+- Class-based OOP |
+- Read more about TypeScript in the link bellow
+```
+https://gitpitch.com/AhmedBHameed/XREF-TUT/master?p=Typescript
+```
+
+---
+
+### Angular microscope view
+
+![More angular](/Angular/dist/img/more_angular.jpg)
+
++++
+
+![Angular structure](/Angular/dist/img/angular_structure.jpg)
 
 ---
 
@@ -184,13 +198,13 @@ export class FirstComponent {
 
 ```javascript
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from  '@angular/common/http';
-import { environment } from  '../../../environments/environment';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class MyserviceService {
     
-    public url = environment.backendUrl;
+    private url = environment.backendUrl;
 
     constructor(private http: HttpClient) {}
 
@@ -217,7 +231,7 @@ export class MyserviceService {
         return this.http.request(type, this.url + page, requestOptions);
     }
 
-    getToken() {
+    private getToken() {
         return window.localStorage.getItem('token') || window.sessionStorage.getItem('token');
     }
 }
@@ -254,12 +268,47 @@ export class AppModule { }
 
 ---
 
-### Angular microscope view
+## Private or Shared service
 
-![More angular](/Angular/dist/img/more_angular.jpg)
+- Private service is the one that you use it with a specific componenet only. |
+- Shared service is the service that can be shared between two componenets or more. |
+
+---
+
+## Private compoenet
+
+If you know that you componenet dose not required all the time then it is good to make it private service.
 
 +++
 
-![Angular structure](/Angular/dist/img/angular_structure.jpg)
+**Private http request**
 
----
+```javascript
+import { Component, OnInit } from '@angular/core';
+// Service
+import { HttpService } from '../../services/http.service';
+
+@Component({
+  selector: 'app-first',
+  templateUrl: './first.component.html',
+  styleUrls: ['./first.component.css'],
+  providers: [ HttpService ]
+})
+export class FirstComponent implements OnInit {
+
+  respond: any;
+  constructor(private http: HttpService) { }
+
+  ngOnInit() {
+    this.http.makeRequest('/posts/1', 'Get', null, null).subscribe(
+      (res: any) => {
+        this.respond = JSON.stringify(res);
+      },
+      (err: any) => {
+        console.log(err);
+      }
+    );
+  }
+}
+```
+@[2-3,9,12-19]
