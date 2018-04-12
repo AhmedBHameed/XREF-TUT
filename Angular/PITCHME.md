@@ -349,3 +349,7 @@ export class AppModule { }
 ```
 @[7-8]
 @[19]
+
+---
+
+# Thank you
