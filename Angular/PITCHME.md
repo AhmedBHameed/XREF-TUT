@@ -80,8 +80,8 @@ Crash course by XREF
 
 ## Create new Angular project
 
-```
-your-path> ng new PROJECT-NAME
+```text
+#your-path> ng new PROJECT-NAME
 ```
 
 ---
@@ -133,10 +133,10 @@ angular-Project
 
 - Basic building block of Angular UI |
 - Angular is a tree of components. |
-- Decorator allow us to mark a class as an Angular component & provide a metadata that |determines how the component should be proccessed, initiated, and used at runtime.
+- Decorator allow us to mark a class as an Angular component & provide a metadata that determines how the component should be proccessed, initiated, and used at runtime. |
 - To create componenet use: |
-```bash
-your-path/PROJECT-NAME/src/app/componenets> ng g c COMPONENT-NAME
+```text
+#your-path\PROJECT-NAME\src\app\componenets> ng g c COMPONENT-NAME
 ```
 
 @fa[arrow-down]
@@ -174,8 +174,8 @@ export class FirstComponent {
 
 - [Share, Grabbing, Modifying] data among components throughout your app. |
 - To create service, use:
-```bash
-your-path/PROJECT-NAME/src/app/componenets> ng g s SERVICE-NAME --module=app
+```text
+#your-path\PROJECT-NAME\src\app\componenets> ng g s SERVICE-NAME --module=app
 ```
 
 @fa[arrow-down]
