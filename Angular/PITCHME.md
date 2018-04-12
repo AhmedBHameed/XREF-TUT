@@ -171,7 +171,7 @@ export class FirstComponent {
 ***Services are used for reusable data services***
 
 - [Share, Grabbing, Modifying] data among components throughout your app. |
-- To create service, use:
+- To create service, use: |
 ```text
 #your-path\PROJECT-NAME\src\app\componenets> ng g s SERVICE-NAME --module=app
 ```
@@ -192,9 +192,7 @@ export class MyserviceService {
     
     public url = environment.backendUrl;
 
-    constructor(
-        private http: HttpClient
-    ) {}
+    constructor(private http: HttpClient) {}
 
     makeRequest(page = null, type = null, data = null, resType: string = null) {
         let headers = new HttpHeaders();
@@ -224,11 +222,8 @@ export class MyserviceService {
     }
 }
 ```
-@[1-4]
-@[6]
-@[7-42]
-@[9]
-@[16-41]
+@[1-3]
+@[5]
 
 +++
 
@@ -261,10 +256,10 @@ export class AppModule { }
 
 ### Angular microscope view
 
-![More angular](/Angular/assets/img/more_angular.jpg)
+![More angular](/Angular/dist/img/more_angular.jpg)
 
 +++
 
-![Angular structure](/Angular/assets/img/angular_structure.jpg)
+![Angular structure](/Angular/dist/img/angular_structure.jpg)
 
 ---
