@@ -351,5 +351,5 @@ export class AppModule { }
 @[19]
 
 ---
-
+![Programmers](/Angular/dist/img/programmer.jpg)
 # Thank you
