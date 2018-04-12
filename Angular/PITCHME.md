@@ -277,7 +277,7 @@ export class AppModule { }
 
 ## Private compoenet
 
-If you know that you componenet dose not required all the time then it is good to make it private service.
+If you know that your componenet dose not required all the time then it is good to make it private service.
 
 +++
 
@@ -312,3 +312,40 @@ export class FirstComponent implements OnInit {
 }
 ```
 @[2-3,9,13-14,17-24]
+
+---
+## Shared compoenet
+
+If you want to share information among components which might be related or not related then use shared service.
+
++++
+**To share a service, you have to provide it inside the main module that containe all the componenets that can share this service**
+
+**app.module.ts**
+```javascript
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
+// componenets
+import { AppComponent } from './app.component';
+import { FirstComponent } from './componenets/first/first.component';
+// Service
+import { HttpService } from './services/http.service';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    FirstComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpClientModule
+  ],
+  providers: [HttpService],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+
+```
+@[7-8]
+@[19]
