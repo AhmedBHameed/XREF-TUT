@@ -112,7 +112,13 @@ angular-Project
 │   │   ├── componenets     # All created componenets here
 │   │   ├── routes          # Routing files here
 │   │   ├── services        # All created services
-│   │   └── pipes           # All created pipes
+│   │   ├── pipes           # All created pipes
+│   │   │
+│   │   ├── app.component.css
+│   │   ├── app.component.html
+│   │   ├── app.component.spec.ts
+│   │   ├── app.component.ts
+│   │   └── app.module.ts
 │   ├── assets
 │   ├── environmenets
 │   ├── favicon.ico
@@ -136,7 +142,7 @@ angular-Project
 └── tslinter.json
 ```
 
-@[5-20]
+@[5-25]
 @[6-9]
 
 ---
@@ -347,9 +353,96 @@ import { HttpService } from './services/http.service';
 export class AppModule { }
 
 ```
-@[342]
-@[344]
+@[7-8]
+@[19]
 
 ---
+
+## Angular part-3
+### Let's go
+
+---
+
+## Angular router:
+***enables navigation from one view to the next as users perform application tasks.***
+**routing is a MODULEs**
+Router base by default is
+```
+<base href="/">
+```
+which is located inside index.html
+
+---
+
+## Create routing for our app.
+
+- Create routing file
+```text
+#your-path\PROJECT-NAME\src\app> ng g m routes --routing
+```
+- This module must be corrected in routes-routing.module.ts
+RouterModule.forChild(routes) -> RouterModule.forRoot(routes)
+- Add your componenets as pages.
+- Becouse routing need a module called RouterModule to be exported, we have to
+extra step that cli can't do for us. The step is to add exports into
+**routes-routing.module**
+- Finally Add routes.module.ts to the main app.module.ts
+
+---
+
+## Routing and Navigation files
+
+**routes-routing.module.ts**
+
+```javascript
+import { NgModule } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+// Componenets
+import { TestComponent } from '../components/test/test.component';
+
+const routes: Routes = [
+  {path: '', component: TestComponent}
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class RoutesRoutingModule { }
+```
+
+@[4-5]
+
+---
+
+**routes.module.ts**
+```javascript
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+// Routing Module
+import { RoutesRoutingModule } from './routes-routing.module';
+
+@NgModule({
+  imports: [
+    CommonModule,
+    RoutesRoutingModule
+  ],
+  exports: [RoutesRoutingModule],
+  declarations: []
+})
+export class RoutesModule { }
+```
+@[12]
+
+- This line is missing. |
+
+---
+
+## Component Interaction
+
+---
+
 ![Programmers](/Angular/dist/img/programmer.jpg)
 # Thank you
