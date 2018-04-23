@@ -383,6 +383,9 @@ which is located inside index.html
 - This module must be corrected in routes-routing.module.ts
 RouterModule.forChild(routes) -> RouterModule.forRoot(routes)
 - Add your componenets as pages.
+
+---
+
 - Becouse routing need a module called RouterModule to be exported, we have to
 extra step that cli can't do for us. The step is to add exports into
 **routes-routing.module**
@@ -443,6 +446,10 @@ export class RoutesModule { }
 ## Component Interaction
 
 ---
+
+Requirements for part 3
+
+- npm install -g json-server
 
 ![Programmers](/Angular/dist/img/programmer.jpg)
 # Thank you
