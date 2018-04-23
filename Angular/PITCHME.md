@@ -347,8 +347,8 @@ import { HttpService } from './services/http.service';
 export class AppModule { }
 
 ```
-@[7-8]
-@[19]
+@[342]
+@[344]
 
 ---
 ![Programmers](/Angular/dist/img/programmer.jpg)
